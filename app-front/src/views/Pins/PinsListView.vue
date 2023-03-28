@@ -19,6 +19,7 @@
         <td>{{ pin.description }}</td>
         <td><router-link :to="{ name: 'UsersUpdate', params: { id: pin.user_id } }">Voir</router-link></td>
         <td><router-link :to="{ name: 'PinsUpdate', params: { id: pin.id } }">Modifier</router-link></td>
+        <td><router-link :to="{ name: 'PinsDelete', params: { id: pin.id } }">Supprimer</router-link></td>
       </tr>
       </tbody>
     </table>

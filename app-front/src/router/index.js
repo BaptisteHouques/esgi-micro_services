@@ -41,6 +41,12 @@ const router = createRouter({
       component: () => import('@/views/Pins/PinsUpdateView.vue'),
       props: true,
     },
+    {
+      path: '/pins/:id/delete',
+      name: 'PinsDelete',
+      component: () => import('@/views/Pins/PinsDeleteView.vue'),
+      props: true,
+    },
   ]
 })
 
