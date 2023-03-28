@@ -1,0 +1,38 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>150</x><y>161</y><w>150</w><h>150</h></coordinates><panel_attributes>User
+--
+id : int
+firstname : varchar (255)
+lastname : varchar(255)
+email : varchar(180)
+password : varchar (255)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>650</x><y>161</y><w>160</w><h>160</h></coordinates><panel_attributes>Pins
+--
+id : int
+titre : varchar (255)
+text : text(500)
+source : varchar (255)
+preference : tinyint
+is_public : boolean
+created_at: datetime
+updated_at : datetime</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>181</y><w>150</w><h>80</h></coordinates><panel_attributes>UserPins
+--
+id : int
+is_creator : boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>221</y><w>130</w><h>40</h></coordinates><panel_attributes>lt=-
+m1=0..1
+m2=1</panel_attributes><additional_attributes>10;10;110;10</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>221</y><w>130</w><h>40</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=0..n</panel_attributes><additional_attributes>10;10;110;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>491</y><w>140</w><h>70</h></coordinates><panel_attributes>Tag
+--
+id : int
+libelle : varchar
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>381</y><w>140</w><h>50</h></coordinates><panel_attributes>PinsTag
+--
+id : int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>311</y><w>50</w><h>90</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=0..n</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>421</y><w>50</w><h>90</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=0..n</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element></diagram>
